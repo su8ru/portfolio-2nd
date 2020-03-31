@@ -1,0 +1,64 @@
+{
+  "name": "su8ru.dev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@types/hogan.js": "^3.0.0",
+    "@types/jquery": "^3.3.33",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "core-js": "^3.4.3",
+    "jquery": "^3.4.1",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-gtag": "^1.6.2",
+    "vue-mixin-decorator": "^1.2.0",
+    "vue-property-decorator": "^8.4.1",
+    "vue-router": "^3.1.6",
+    "vue-scrollto": "^2.17.1",
+    "vue2-touch-events": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@vue/cli-plugin-babel": "^4.2.3",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-plugin-router": "^4.2.3",
+    "@vue/cli-plugin-typescript": "^4.2.3",
+    "@vue/cli-plugin-unit-mocha": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "1.0.0-beta.32",
+    "chai": "^4.1.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.1",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.0",
+    "typescript": "^3.8.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

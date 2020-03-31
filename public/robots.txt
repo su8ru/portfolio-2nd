@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://su8ru.dev/sitemap.xml
