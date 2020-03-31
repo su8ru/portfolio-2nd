@@ -3,7 +3,7 @@ name: deploy
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   deploy:
@@ -24,5 +24,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2.3.1
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
+          PUBLISH_BRANCH: master
           PUBLISH_DIR: ./dist
