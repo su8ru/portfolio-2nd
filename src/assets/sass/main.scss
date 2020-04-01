@@ -12,6 +12,22 @@ html, body {
   padding: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+table tbody tr {
+  text-align: left;
+  th {
+    padding: 0.5rem;
+  }
+  td {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
 }

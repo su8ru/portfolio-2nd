@@ -7,7 +7,39 @@
         <h2>su8ru</h2>
       </div>
     </div>
-    <stack-box color="#c1dfff" title="about" icon="user"></stack-box>
+    <stack-box color="#c1dfff" title="about" icon="user">
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <h3>
+                <font-awesome-icon icon="birthday-cake" class="fa-fw" /> birthday
+              </h3>
+            </th>
+            <td>2003.08.09</td>
+          </tr>
+          <tr>
+            <th>
+              <h3><font-awesome-icon icon="address-card" class="fa-fw" /> being</h3>
+            </th>
+            <td>
+              Azabu High School<br />
+              73rd AFes Executive Committee
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <h3>
+                <font-awesome-icon icon="map-marker-alt" class="fa-fw" /> live
+              </h3>
+            </th>
+            <td>
+              Tokyo, Japan
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </stack-box>
     <stack-box color="#dfffc1" title="being" icon="school"></stack-box>
     <stack-box color="#ffe1c1" title="skill" icon="terminal"></stack-box>
     <stack-box color="#ffc1df" title="contact" icon="envelope"></stack-box>
