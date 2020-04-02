@@ -88,10 +88,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import StackBox from "@/components/StackBox.vue";
+import SimpleIcons from "@/components/SimpleIcons.vue";
 
 @Component({
   components: {
     StackBox,
+    SimpleIcons,
   },
 })
 export default class Home extends Vue {
