@@ -13,14 +13,18 @@
           <tr>
             <th>
               <h3>
-                <font-awesome-icon icon="birthday-cake" class="fa-fw" /> birthday
+                <font-awesome-icon icon="birthday-cake" class="fa-fw" />
+                birthday
               </h3>
             </th>
             <td>2003.08.09</td>
           </tr>
           <tr>
             <th>
-              <h3><font-awesome-icon icon="address-card" class="fa-fw" /> being</h3>
+              <h3>
+                <font-awesome-icon icon="address-card" class="fa-fw" />
+                being
+              </h3>
             </th>
             <td>
               Azabu High School<br />
@@ -30,7 +34,8 @@
           <tr>
             <th>
               <h3>
-                <font-awesome-icon icon="map-marker-alt" class="fa-fw" /> live
+                <font-awesome-icon icon="map-marker-alt" class="fa-fw" />
+                live
               </h3>
             </th>
             <td>
