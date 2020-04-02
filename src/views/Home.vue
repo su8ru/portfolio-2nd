@@ -40,8 +40,8 @@
         </tbody>
       </table>
     </stack-box>
-    <stack-box color="#dfffc1" title="being" icon="school"></stack-box>
-    <stack-box color="#ffe1c1" title="skill" icon="terminal"></stack-box>
+    <stack-box color="#dfffc1" title="skill" icon="terminal"></stack-box>
+    <stack-box color="#ffe1c1" title="work" icon="folder"></stack-box>
     <stack-box color="#ffc1df" title="contact" icon="envelope"></stack-box>
   </div>
 </template>
