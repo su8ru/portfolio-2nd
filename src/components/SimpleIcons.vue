@@ -1,16 +1,17 @@
 <template>
   <span
     class="simple-icon"
-    v-html="simpleIcons.get(name).svg"
+    v-html="icon.svg"
     :style="{ fill: getColor }"
   ></span>
 </template>
 
 <style lang="scss">
 .simple-icon {
+  vertical-align: -2.4px;
   svg {
     height: 1.2rem;
-    width: 24px;
+    width: 1.6rem;
   }
 }
 </style>
@@ -25,10 +26,10 @@ export default class SimpleIcons extends Vue {
   @Prop()
   readonly color?: string;
 
-  readonly simpleIcons = require("simple-icons");
+  readonly icon = require("simple-icons/icons/" + this.name);
 
   get getColor() {
-    return this.color || "#" + this.simpleIcons.get(this.name).hex;
+    return this.color || "#" + this.icon.hex;
   }
 }
 </script>
