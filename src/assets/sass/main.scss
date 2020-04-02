@@ -29,5 +29,14 @@ table tbody tr {
     padding: 0.5rem;
     font-size: 1.1rem;
     line-height: 1.8;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      li {
+        display: inline;
+        margin-right: 0.5rem;
+      }
+    }
   }
 }
