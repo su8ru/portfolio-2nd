@@ -64,9 +64,6 @@
     }
 
     .content-right {
-      $width: 600px;
-      width: $width;
-      max-width: $width;
       padding: 1rem 1rem 1rem 2rem;
 
       display: block;
