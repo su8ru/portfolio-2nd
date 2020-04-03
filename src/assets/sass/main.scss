@@ -40,3 +40,26 @@ table tbody tr {
     }
   }
 }
+
+ul.list-row {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+
+  li {
+    display: inline;
+    margin-right: 1.5rem;
+  }
+}
+
+.fa-github {
+  path {
+    fill: #181717;
+  }
+}
+.fa-twitter {
+  path {
+    fill: #1da1f2;
+  }
+}

@@ -214,7 +214,25 @@
         </tbody>
       </table>
     </stack-box>
-    <stack-box color="#ffc1df" title="contact" icon="envelope"></stack-box>
+    <stack-box color="#ffc1df" title="contact" icon="envelope">
+      <ul class="list-row">
+        <li>
+          <a href="https://twitter.com/su8ru_" target="_blank">
+            <font-awesome-icon :icon="['fab', 'twitter']" class="fa-fw fa-2x" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/su8ru" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github']" class="fa-fw fa-2x" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@su8ru.dev" target="_blank">
+            <font-awesome-icon icon="envelope" class="fa-fw fa-2x" />
+          </a>
+        </li>
+      </ul>
+    </stack-box>
   </div>
 </template>
 
