@@ -167,7 +167,45 @@
         </tbody>
       </table>
     </stack-box>
-    <stack-box color="#ffe1c1" title="work" icon="folder"></stack-box>
+    <stack-box color="#ffe1c1" title="work" icon="folder">
+      <table>
+        <tbody>
+          <tr v-for="work in works" :key="work.title">
+            <td>
+              <carousel
+                :per-page="1"
+                :pagination-enabled="false"
+                :navigation-enabled="false"
+                :autoplay="true"
+                :loop="true"
+                :speed="1000"
+                :autoplay-timeout="5000"
+                :style="{ width: '400px' }"
+              >
+                <slide v-for="img in work.img" :key="img">
+                  <img :src="img" alt="kostl img" width="400" />
+                </slide>
+              </carousel>
+            </td>
+            <td>
+              {{ work.title }}
+              <a v-if="work.url" :href="work.url" target="_blank">
+                <br />{{ work.url }}
+              </a>
+              <a
+                v-if="work.github"
+                :href="'https://github.com/' + work.github"
+                target="_blank"
+              >
+                <br />
+                <simple-icons name="github" />
+                {{ work.github }}
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </stack-box>
     <stack-box color="#ffc1df" title="contact" icon="envelope"></stack-box>
   </div>
 </template>
@@ -222,5 +260,32 @@ import { Carousel, Slide } from "vue-carousel";
 })
 export default class Home extends Vue {
   readonly logo = require("../assets/logo.svg");
+  readonly works = {
+    afes: {
+      img: [require("../assets/work/afes.png")],
+      title: "73rd AFes Website",
+      url: "https://afes.info",
+      github: "afes-website",
+    },
+    kostl: {
+      img: [
+        require("../assets/work/kostl1.png"),
+        require("../assets/work/kostl2.png"),
+        require("../assets/work/kostl3.png"),
+        require("../assets/work/kostl4.png"),
+      ],
+      title: "こすとれ - KO･S Train Location",
+      url: "https://kostl.info",
+      github: "su8ru/kostl",
+    },
+    sw2: {
+      img: [
+        require("../assets/work/sw21.png"),
+        require("../assets/work/sw22.png"),
+      ],
+      title: "Space Wars 2",
+      github: "apcc/SpaceWars2",
+    },
+  };
 }
 </script>
