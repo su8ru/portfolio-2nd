@@ -189,6 +189,14 @@
             </td>
             <td>
               {{ work.title }}
+              <span v-if="work.skills">
+                <br />
+                <simple-icons
+                  v-for="skill in work.skills"
+                  :key="skill"
+                  :name="skill"
+                />
+              </span>
               <a v-if="work.url" :href="work.url" target="_blank">
                 <br />{{ work.url }}
               </a>
@@ -266,6 +274,18 @@ export default class Home extends Vue {
       title: "73rd AFes Website",
       url: "https://afes.info",
       github: "afes-website",
+      skills: [
+        "vue-dot-js",
+        "typescript",
+        "html5",
+        "css3",
+        "sass",
+        "bootstrap",
+        "php",
+        "git",
+        "github",
+        "githubactions",
+      ],
     },
     kostl: {
       img: [
@@ -277,6 +297,16 @@ export default class Home extends Vue {
       title: "こすとれ - KO･S Train Location",
       url: "https://kostl.info",
       github: "su8ru/kostl",
+      skills: [
+        "vue-dot-js",
+        "typescript",
+        "html5",
+        "css3",
+        "sass",
+        "git",
+        "github",
+        "githubactions",
+      ],
     },
     sw2: {
       img: [
@@ -285,6 +315,7 @@ export default class Home extends Vue {
       ],
       title: "Space Wars 2",
       github: "apcc/SpaceWars2",
+      skills: ["cplusplus", "visualstudio"],
     },
   };
 }
