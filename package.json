@@ -23,6 +23,7 @@
     "jquery": "^3.4.1",
     "simple-icons": "^2.8.0",
     "vue": "^2.6.10",
+    "vue-carousel": "^0.18.0",
     "vue-class-component": "^7.0.2",
     "vue-gtag": "^1.6.2",
     "vue-mixin-decorator": "^1.2.0",
