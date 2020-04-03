@@ -210,11 +210,14 @@
 import { Component, Vue } from "vue-property-decorator";
 import StackBox from "@/components/StackBox.vue";
 import SimpleIcons from "@/components/SimpleIcons.vue";
+import { Carousel, Slide } from "vue-carousel";
 
 @Component({
   components: {
     StackBox,
     SimpleIcons,
+    Carousel,
+    Slide,
   },
 })
 export default class Home extends Vue {
