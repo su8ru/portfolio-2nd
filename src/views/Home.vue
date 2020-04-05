@@ -3,7 +3,7 @@
     <div id="top">
       <img id="icon" src="https://gravatar.su8ru.dev?s=200" alt="icon" />
       <div id="name">
-        <h1><img :src="logo" alt="すばる" width="300" /></h1>
+        <h1><img :src="logo" alt="すばる" width="250" /></h1>
         <h2>su8ru</h2>
       </div>
     </div>
@@ -180,10 +180,10 @@
                 :loop="true"
                 :speed="1000"
                 :autoplay-timeout="5000"
-                :style="{ width: '400px' }"
+                class="work-carousel"
               >
                 <slide v-for="img in work.img" :key="img">
-                  <img :src="img" alt="kostl img" width="400" />
+                  <img :src="img" alt="work img" class="s-img" />
                 </slide>
               </carousel>
             </td>
@@ -264,6 +264,23 @@
       h2 {
         color: #666;
         font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      #icon {
+        width: 30%;
+        margin: 0.5rem;
+      }
+      #name {
+        width: calc(70% - 2.5rem);
+        margin: 0.5rem 1rem 0.5rem 0.5rem;
+
+        h1,
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
   }

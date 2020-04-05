@@ -41,6 +41,17 @@ table tbody tr {
   }
 }
 
+
+@media screen and (max-width: 1000px) {
+  table tbody tr {
+    th, td {
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+  }
+}
+
 ul.list-row {
   list-style-type: none;
   padding: 0.5rem;
@@ -50,6 +61,16 @@ ul.list-row {
   li {
     display: inline;
     margin-right: 1.5rem;
+  }
+}
+
+.work-carousel {
+  width: 300px;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+  .s-img {
+    width: 100%;
   }
 }
 

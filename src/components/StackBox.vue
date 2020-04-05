@@ -74,6 +74,29 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .stack-box {
+    flex-direction: column;
+    .box-left {
+      width: 100%;
+      .content-left {
+        width: 100%;
+        max-width: unset;
+        justify-content: center;
+        svg {
+          margin: 0;
+        }
+      }
+    }
+    .box-right {
+      width: 100%;
+      .content-right {
+        padding: 1rem;
+      }
+    }
+  }
+}
 </style>
 
 <script lang="ts">
