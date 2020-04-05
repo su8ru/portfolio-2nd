@@ -57,10 +57,10 @@
     display: flex;
     flex-direction: row;
 
-    background: rgba(var(--r), var(--g), var(--b), 0.4);
+    background: rgba(var(--r), var(--g), var(--b), 0.2);
 
     &:hover {
-      background: rgba(var(--r), var(--g), var(--b), 0.5);
+      background: rgba(var(--r), var(--g), var(--b), 0.4);
     }
 
     .content-right {

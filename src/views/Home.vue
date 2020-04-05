@@ -273,8 +273,8 @@
         margin: 0.5rem;
       }
       #name {
-        width: calc(70% - 2.5rem);
-        margin: 0.5rem 1rem 0.5rem 0.5rem;
+        width: calc(70% - 3rem);
+        margin: 0.5rem 1.5rem 0.5rem 0.5rem;
 
         h1,
         img {
