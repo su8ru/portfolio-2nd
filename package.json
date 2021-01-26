@@ -20,7 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "core-js": "^3.4.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "simple-icons": "^2.8.0",
     "vue": "^2.6.10",
     "vue-carousel": "^0.18.0",
